@@ -1,0 +1,617 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Website Development - WebSide">
+  <!-- ---------------------------banner start---------------- -->
+  <section class="mb-20 web-dev-banner">
+    <div
+      class="banner-info static lg:absolute top-[30%] md:pl-12 lg:w-[50%] md:w-[75%] w-[100%] md:text-left text-center flex flex-col gap-8"
+    >
+      <h4 class="text-3xl font-bold text-[#293A4E] Title-font">Pathao Car</h4>
+      <h1 class="md:text-6xl text-4xl Title-font font-bold text-gray-800">
+        Travel in comfort, at your Convenience
+      </h1>
+      <p class="text-xl text-gray-700">
+        Want a comfortable ride home from work? Pathao cars have you covered!
+      </p>
+      <div class="md:flex gap-6 w-[70%] btn-section">
+        <a href="contact.html" target="_blank">
+          <button
+            class="chatbtn btn bg-accent hover:bg-blue-700 bg-blue-600 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between w-full"
+          >
+            <p class="font-light whitespace-nowrap">Contact us</p>
+          </button>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=1234567890&text=Hello"
+          target="_blank"
+        >
+          <button
+            class="chatbtn btn border border-black md:text-black p-3 px-4 rounded-md flex items-center justify-center md:justify-between w-full"
+          >
+            <p class="font-light whitespace-nowrap">Message on WhatsApp</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="banner-img"></div>
+  </section>
+  <!-- ---------------------------banner end---------------- -->
+
+  <!-- ---------------------------features service section start---------------- -->
+  <section class="grid md:grid-cols-3 gap-6 md:px-12 px-4 md:my-48 my-32">
+    <div class="text-center flex flex-col gap-4">
+      <img
+        class="w-auto h-52 mx-auto"
+        src="https://pathao.com/wp-content/uploads/2018/12/ic_Car_Feature_1.png"
+        alt=""
+      />
+      <div class="px-6">
+        <h2 class="title text-4xl font-bold mb-6 Title">
+          Travel at Your Convenience
+        </h2>
+        <p class="text-gray-700 font-medium">
+          Ride-sharing, but budget is tight? Try Pathao Car Lite! Want to travel
+          in extra comfort? Use Pathao Car Plus!
+        </p>
+      </div>
+    </div>
+    <div class="text-center flex flex-col gap-4">
+      <img
+        class="w-auto h-52 mx-auto"
+        src="https://pathao.com/wp-content/uploads/2018/12/ic_Car_Feature_1.png"
+        alt=""
+      />
+      <div class="px-6">
+        <h2 class="title text-4xl font-bold mb-6 Title">
+          Comfort With Affordability
+        </h2>
+        <p class="text-gray-700 font-medium">
+          Ride-sharing, but budget is tight? Try Pathao Car Lite! Want to travel
+          in extra comfort? Use Pathao Car Plus!
+        </p>
+      </div>
+    </div>
+    <div class="text-center flex flex-col gap-4">
+      <img
+        class="w-auto h-52 mx-auto"
+        src="https://pathao.com/wp-content/uploads/2018/12/ic_Car_Feature_1.png"
+        alt=""
+      />
+      <div class="px-6">
+        <h2 class="title text-4xl font-bold mb-6 Title">
+          Hasslefree and Quick
+        </h2>
+        <p class="text-gray-700 font-medium">
+          Ride-sharing, but budget is tight? Try Pathao Car Lite! Want to travel
+          in extra comfort? Use Pathao Car Plus!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------features service section end---------------- -->
+
+  <!-- ---------------------------Earn step section start---------------- -->
+  <section>
+    <!----- first section ----->
+    <div class="lg:flex items-center md:max-w-[1160px] mx-auto">
+      <div
+        class="img-container lg:block hidden"
+        style="position: relative; width: 55%;  min-height: 970px;"
+      >
+        <div
+          class="background"
+          style="background-image: url('/src/images/mobile-screen-2-.png'); background-size: cover; background-position: center; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;"
+        >
+        </div>
+        <div class="content" style="position: relative; z-index: 1;">
+          <img
+            src="https://pathao.com/wp-content/uploads/2018/12/Pathao-car-select.png"
+            alt=""
+            style="max-width: 100%; height: 810px; border-radius: 20px; display: block; position: absolute; top:68px; left:146px; "
+          />
+        </div>
+      </div>
+      <div class="text-container lg:w-[45%] md:pl-12 px-6">
+        <div class="flex items-center gap-6">
+          <div class="">
+            <img
+              src="https://pathao.com/wp-content/themes/webpathao/assets/images/icon-car.png"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <h5 class="text-gray-600 text-xl">Get going with</h5>
+            <h3 class="text-3xl font-bold text-red-500 Title">Pathao Car</h3>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col gap-6">
+          <div class="">
+            <h1 class="text-4xl font-bold text-gray-300">01</h1>
+            <h1 class="text-4xl font-bold Title">Download the App</h1>
+          </div>
+          <p class="text-xl text-gray-600">
+            Pathao cars serve according to your need. Download the app and
+            select Car option
+          </p>
+          <div class="download-link flex gap-6">
+            <a href="">
+              <img
+                src="https://pathao.com/wp-content/themes/webpathao/assets/images/play-store.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://pathao.com/wp-content/themes/webpathao/assets/images/appstore.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- illustration img -->
+    <div class="w-[75%] text-right ml-auto -translate-y-24 md:block hidden">
+      <img
+        class="lg:h-96 md:h-60"
+        src="/src/images/step-illustration.png"
+        alt=""
+      />
+    </div>
+    <!----- second section ----->
+    <div
+      class="md:flex items-center md:px-12 px-6 justify-between mx-auto md:-translate-y-40"
+    >
+      <div class="text-container lg:pl-12">
+        <div class="mt-12 flex flex-col gap-6">
+          <div class="">
+            <h1 class="text-4xl font-bold text-gray-300">02</h1>
+            <h1 class="text-4xl font-bold Title">Request your Car</h1>
+          </div>
+          <p class="text-xl text-gray-600 lg:w-[70%]">
+            Set your pickup and destination locations. Select Car Lite or Car
+            Plus.
+          </p>
+        </div>
+      </div>
+      <div class="img-container mt-4">
+        <img
+          src="https://pathao.com/wp-content/uploads/2018/12/rsz_dscf1613.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- road -->
+    <div class="md:w-[75%] ml-auto -translate-y-40 md:block hidden">
+      <img class="lg:h-60 md:h-32" src="/src/images/road.png" alt="" />
+    </div>
+    <!----- third section ----->
+    <div
+      class="grid md:grid-cols-2 md:px-12 px-6 items-center mx-auto gap-6 lg:gap-32 md:-translate-y-40 md:-mb-20"
+    >
+      <div class="img-container mt-4 md:order-1 order-2">
+        <img
+          src="https://pathao.com/wp-content/uploads/2018/12/rsz_dscf1901.jpg"
+          alt=""
+        />
+      </div>
+      <div class="text-container md:order-2 order-1">
+        <div class="mt-12 flex flex-col gap-6">
+          <div>
+            <h1 class="text-4xl font-bold text-gray-300">03</h1>
+            <h1 class="text-4xl font-bold Title">Start your Ride</h1>
+          </div>
+          <p class="text-xl text-gray-600 md:w-[70%]">
+            Set your pickup and destination locations. Select Car Lite or Car
+            Plus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- road -->
+    <div class="md:w-[75%] ml-auto -translate-y-20 md:block hidden">
+      <img class="lg:h-60 md:h-32" src="/src/images/road-right.png" alt="" />
+    </div>
+
+    <!-- --------four section------ -->
+    <div
+      class="md:flex items-center md:px-12 px-6 justify-between mx-auto md:-translate-y-20"
+    >
+      <div class="text-container">
+        <div class="mt-12 flex flex-col gap-6">
+          <div class="">
+            <h1 class="text-4xl font-bold text-gray-300">04</h1>
+            <h1 class="text-4xl font-bold Title">Request your Car</h1>
+          </div>
+          <p class="text-xl text-gray-600 lg:w-[70%]">
+            Set your pickup and destination locations. Select Car Lite or Car
+            Plus.
+          </p>
+        </div>
+      </div>
+      <div class="img-container md:ml-10 mt-4">
+        <img
+          src="https://pathao.com/wp-content/uploads/2018/12/rsz_dscf1613.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------Earn step section end---------------- -->
+
+  <div class="h-[1px] bg-slate-200 mx-12 mb-12"></div>
+
+  <!-- ---------------------------earn-step-content  section start---------------- -->
+  <section
+    class="md:px-12 px-6 grid md:grid-cols-2 justify-between lg:gap-32 gap-6 items-center lg:pb-40 pb-10"
+  >
+    <div class="earn-step-info md:order-1 order-2">
+      <h1 class="text-4xl font-bold Title">
+        Pay Cashless for your <br /> Ride
+      </h1>
+      <p class="text-xl text-gray-500 my-6">
+        Enjoy hassle-free payment with the option to pay with your card, Digital
+        pay or bKash.
+      </p>
+      <button class="text-blue-500 font-semibold text-xl">
+        <a href="">Learn More</a>
+      </button>
+    </div>
+    <div class="img md:order-2 order-1 w-[70%] mx-auto">
+      <img
+        src="https://pathao.com/wp-content/uploads/2018/12/pay-info.png"
+        alt=""
+      />
+    </div>
+  </section>
+  <!-- ---------------------------earn-step-content  section end---------------- -->
+
+  <!-- ---------------------------earn with our car  section start---------------- -->
+  <section class="md:px-12 px-6">
+    <div class="grid md:grid-cols-2 lg:gap-32 gap-6 items-center">
+      <div class="">
+        <img
+          src="https://pathao.com/wp-content/uploads/2018/12/rsz_dscf1209.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold Title">Earn with our Car</h1>
+        <ul class="web-development-list-items my-6">
+          <li>More solvency with a safe & secure income</li>
+          <li>Exciting Bonus offers are given regularly</li>
+          <li>Hassle-free On-time payment</li>
+        </ul>
+      </div>
+    </div>
+    <button
+      class="chatbtn btn bg-accent hover:bg-blue-700 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between"
+    >
+      <p class="font-light whitespace-nowrap">Become a Captain</p>
+    </button>
+  </section>
+  <!-- ---------------------------earn with our car  section end---------------- -->
+
+  <!-- -------------------Technologies we use section start------------------- -->
+  <section class="md:px-12 px-6 md:my-44 my-28">
+    <div class="mb-10 md:flex text-center items-end justify-center">
+      <h1 class="Title md:text-5xl text-3xl">Technologies we use</h1>
+      <p class="md:text-sm text-xs font-bold mb-4 text-blue-600">
+        Web Development
+      </p>
+    </div>
+    <!-- Technologies container -->
+    <div class="flex flex-col md:gap-16 gap-8">
+      <div
+        class="grid lg:grid-cols-8 md:grid-cols-6 grid-cols-3 md:gap-0 gap-8"
+      >
+        <img src="/src/images/tech/c-.png" class="h-12" alt="" />
+        <img src="/src/images/tech/c-sharp.png" class="h-12" alt="" />
+        <img src="/src/images/tech/css-3.png" class="h-12" alt="" />
+        <img src="/src/images/tech/go-logo-white.png" class="h-12" alt="" />
+        <img src="/src/images/tech/html-5.png" class="h-12" alt="" />
+        <img src="/src/images/tech/icons8-dart-480.png" class="h-12" alt="" />
+        <img src="/src/images/tech/java.png" class="h-12" alt="" />
+        <img src="/src/images/tech/js.png" class="h-12" alt="" />
+      </div>
+      <div
+        class="grid lg:grid-cols-7 justify-center md:gap-0 gap-8 text-center mx-auto md:grid-cols-6 grid-cols-3"
+      >
+        <img src="/src/images/tech/php.png" class="h-12" alt="" />
+        <img src="/src/images/tech/program.png" class="h-12" alt="" />
+        <img src="/src/images/tech/python.png" class="h-12" alt="" />
+        <img src="/src/images/tech/rust-logo-blk.png" class="h-12" alt="" />
+        <img src="/src/images/tech/sql-server.png" class="h-12" alt="" />
+        <img src="/src/images/tech/swift.png" class="h-12" alt="" />
+        <img src="/src/images/tech/typescript.png" class="h-12" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- -------------------Technologies we use section end------------------------ -->
+
+  <!-- ---------------------Frequently Asked Questions start----------------- -->
+  <section class="my-20">
+    <section class="">
+      <h1
+        class="text-center md:text-4xl text-3xl Title font-bold not-italic leading-[50px] max-[600px]:text-2xl lg:text-4xl lg:leading-[80px]"
+      >
+        Frequently Asked Questions
+      </h1>
+      <section class="md:p-8 justify-between items-start p-4 md:flex gap-6">
+        <div class="FAQ_left_section">
+          <div class="md:border-b-2 border-b">
+            <div
+              class="flex gap-[8px] faq-itm justify-between p-4 items-center relative z-[100]"
+            >
+              <h5 class="text-[15px] md:text-[18px] font-semibold leading-7">
+                What technologies and tools does Datadoat use for software
+                development?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat leverage modern and robust technologies, including
+              programming languages, frameworks, and development tools, tailored
+              to your project's needs.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex justify-between faq-itm relative z-[100] p-4">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                How does Datadoat ensure the security and confidentiality of our
+                business data?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat prioritizes data security and confidentiality. Datadoat's
+              team follows industry best practices and implements security
+              measures to protect your information.
+            </p>
+          </div>
+
+          <div class="bmd:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                What is the process for project development, and how do we stay
+                updated on progress?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat follows an agile development approach, providing weekly
+              updates, conducting meetings, and offering a transparent project
+              management system.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                Can Datadoat handle the entire development process, including
+                design and testing?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Yes, Datadoat offers end-to-end services, encompassing design,
+              development, testing, and deployment to ensure a seamless
+              development experience.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                What is the estimated timeline for completing our project?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              The timeline depends on the project's scope and complexity.
+              Datadoat will provide you with a detailed timeline during the
+              project scoping phase.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                How does Datadoat determine the cost of our project?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat assess the project scope, requirements, and complexity to
+              provide a detailed and competitive cost estimate.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ_right_section">
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                How do you handle potential changes or additions during the
+                development process?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat is flexible and accommodate changes through regular
+              communication and change management processes.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                Do you provide ongoing support and maintenance after the project
+                is launched?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Absolutely! Datadoat offers post-launch support and maintenance
+              packages to ensure your software/app/website remains up-to-date
+              and functional.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                Whats Datadoat's approach to ensuring the software/app/website
+                is user-friendly and intuitive?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              User experience (UX) is at the core of Datadoat's design process.
+              We conduct usability testing and follow UX best practices to
+              ensure user satisfaction.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5 class="font-semibold leading-7 sm:mr-0">
+                How will you ensure that the software/app/website is scalable
+                for future growth?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat designs and develops solutions with scalability in mind,
+              enabling easy expansion and accommodating future business needs.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                What is Datadoats payment terms and options?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoats payment terms are flexible, and we offer various payment
+              options based on project milestones and client preferences.
+            </p>
+          </div>
+
+          <div class="md:border-b-2 border-b">
+            <div class="flex faq-itm justify-between p-4 relative z-[100]">
+              <h5
+                class="text-[15px] md:text-[18px] font-semibold leading-7 sm:mr-0"
+              >
+                What support does Datadoat offers post-launch in case of issues
+                or enhancements?
+              </h5>
+              <img
+                src="/src/images/faq-down.svg"
+                class="w-4"
+                alt="Expandable"
+              />
+            </div>
+            <p
+              class="min-h-0 font-normal mt-2 leading-6 text-base px-5 tracking-[-0.5px] opacity-80 lg:text-lg lg:leading-9"
+            >
+              Datadoat provides ongoing support and offer maintenance packages
+              to address any issues or implement new features post-launch.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <!-- ---------------------Frequently Asked Questions end----------------- -->
+</MainLayout>

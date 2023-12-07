@@ -1,0 +1,313 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Datadot Labs | Company Blog">
+  <!-- banner -->
+  <div class="max-w-[1600px] lg:px-12 bg-gray-100 px-6 mx-auto pt-6">
+    <div
+      class="flex justify-between items-center content-center lg:border-b-[1px] border-solid border-gainsboro-200"
+    >
+      <div>
+        <h1 class="text-3xl text-[#152934] mb-2 font-semibold">
+          Datadoat Labs Blog
+        </h1>
+        <p>Announcements, updates, releases, and more</p>
+      </div>
+      <div>
+        <img
+          class="w-60 hidden md:block"
+          src="/src/images/blog_img/banner/blog.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- navigation -->
+  <div
+    class="max-w-[1600px] mx-auto flex gap-8 justify-between lg:items-center lg:px-12 px-6 mt-6 border-b pb-4"
+  >
+    <div class="">
+      <ul class="flex gap-4 pb-4 items-center content-center text-lg">
+        <a
+          href="blog"
+          class="bg-blue-600 px-2 lg:px-4 py-1 rounded-md text-white border"
+        >
+          <li>Home</li>
+        </a>
+        <a
+          href="news-room"
+          class="hover:bg-blue-600 py-1 bg-gray-300 px-2 lg:px-4 rounded-md hover:text-white duration-500"
+        >
+          <li>Newsroom</li>
+        </a>
+      </ul>
+    </div>
+    <div>
+      <input
+        type="text"
+        class="border outline-none lg:w-[100%] w-[90%] lg:p-2 p-1 rounded-md"
+        placeholder="Search Blog"
+      />
+    </div>
+  </div>
+
+  <!-- common blog -->
+  <div class="bg-[#f5f6f7] max-w-[1600px] mx-auto">
+    <div class="mx-auto py-12">
+      <div
+        class="grid lg:grid-cols-2 justify-between content-center px-6 gap-8"
+      >
+        <div class="bg-[#ffffff] rounded-md shadow h-auto">
+          <div class="w-full">
+            <img
+              class="w-full rounded-md"
+              src="/src/images/blog_img/images/blog-4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lg:p-4 pt-4">
+            <div class="flex gap-4 mt-2 mx-4">
+              <p>Promotions</p>
+              <p>June 13, 2021</p>
+            </div>
+            <h1 class="text-[#000] lg:text-4xl text-xl font-bold mx-4 mb-6">
+              Five things you need to carry on a daily basis
+            </h1>
+          </div>
+        </div>
+        <div class="flex-grow h-auto hidden sm:block space-y-[36px]">
+          <div
+            class="flex bg-[#ffffff] pl-6 items-center rounded-md shadow justify-between"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-4">
+                <p>Promotions</p>
+                <p>June 13, 2021</p>
+              </div>
+              <h1 class="text-[#000] text-[22px] font-bold">
+                Update your cart on Pathao Food
+              </h1>
+            </div>
+            <img
+              class="h-auto object-cover"
+              src="/src/images/blog_img/images/blog-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex bg-[#ffffff] pl-6 items-center rounded-md shadow justify-between"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-4">
+                <p>Promotions</p>
+                <p>June 13, 2021</p>
+              </div>
+              <h1 class="text-[#000] text-[22px] font-bold">
+                Update your cart on Pathao Food
+              </h1>
+            </div>
+            <img
+              class="h-auto object-cover"
+              src="/src/images/blog_img/images/blog-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex bg-[#ffffff] pl-6 items-center rounded-md shadow justify-between"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-4">
+                <p>Promotions</p>
+                <p>June 13, 2021</p>
+              </div>
+              <h1 class="text-[#000] text-[22px] font-bold">
+                Update your cart on Pathao Food
+              </h1>
+            </div>
+            <img
+              class="h-auto object-cover"
+              src="/src/images/blog_img/images/blog-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- product updates -->
+  <div class="">
+    <div class="max-w-[1600px] mx-auto py-10 lg:px-12 px-6 border-b-[1px]">
+      <div class="flex justify-between items-center content-center mb-10">
+        <h1 class="lg:text-4xl text-2xl text-[#152934] font-semibold">
+          Product Updates
+        </h1>
+        <button
+          class="bg-white flex items-center text-black px-6 py-2 border rounded-md"
+        >
+          View All
+        </button>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div
+          class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500"
+        >
+          <img
+            class="w-full rounded-md"
+            src="/src/images/blog_img/images/product/product-1.png"
+            alt=""
+          />
+
+          <div class="flex gap-4 mt-2 mx-4">
+            <p>Promotions</p>
+            <p>June 13, 2021</p>
+          </div>
+          <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+            Five things you need to carry on a daily basis
+          </h1>
+        </div>
+        <div
+          class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500"
+        >
+          <img
+            class="w-full rounded-md"
+            src="/src/images/blog_img/images/product/product-1.png"
+            alt=""
+          />
+
+          <div class="flex gap-4 mt-2 mx-4">
+            <p>Promotions</p>
+            <p>June 13, 2021</p>
+          </div>
+          <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+            Five things you need to carry on a daily basis
+          </h1>
+        </div>
+        <div
+          class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500"
+        >
+          <img
+            class="w-full rounded-md"
+            src="/src/images/blog_img/images/product/product-1.png"
+            alt=""
+          />
+
+          <div class="flex gap-4 mt-2 mx-4">
+            <p>Promotions</p>
+            <p>June 13, 2021</p>
+          </div>
+          <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+            Five things you need to carry on a daily basis
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-[1600px] mx-auto lg:px-12 px-6 py-10 border-b-[1px]">
+      <div class="flex justify-between items-center content-center mb-10">
+        <h1 class="lg:text-4xl text-2xl text-[#152934] font-semibold">
+          Promotions
+        </h1>
+        <button class="bg-white text-black px-6 py-2 border rounded-md">
+          View All
+        </button>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div
+          class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500"
+        >
+          <img
+            class="w-full rounded-md"
+            src="/src/images/blog_img/images/promotios/promo-1.jpg"
+            alt=""
+          />
+          <div class="flex gap-4 mt-2 mx-4">
+            <p>Promotions</p>
+            <p>June 13, 2021</p>
+          </div>
+          <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+            Five things you need to carry on a daily basis
+          </h1>
+        </div>
+        <div
+          class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500"
+        >
+          <img
+            class="w-full rounded-md"
+            src="/src/images/blog_img/images/promotios/promo-1.jpg"
+            alt=""
+          />
+          <div class="flex gap-4 mt-2 mx-4">
+            <p>Promotions</p>
+            <p>June 13, 2021</p>
+          </div>
+          <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+            Five things you need to carry on a daily basis
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- newsroom -->
+
+  <div class="max-w-[1600px] mx-auto lg:px-12 px-6 py-10 border-b-[1px]">
+    <div class="flex justify-between items-center content-center mb-10">
+      <h1 class="lg:text-4xl text-2xl text-[#152934] font-semibold">
+        Newsroom
+      </h1>
+      <button class="bg-white text-black px-6 py-2 border rounded-md">
+        View All
+      </button>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500">
+        <img
+          class="w-full rounded-md"
+          src="/src/images/blog_img/images/product/product-1.png"
+          alt=""
+        />
+
+        <div class="flex gap-4 mt-2 mx-4">
+          <p>Promotions</p>
+          <p>June 13, 2021</p>
+        </div>
+        <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+          Five things you need to carry on a daily basis
+        </h1>
+      </div>
+      <div class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500">
+        <img
+          class="w-full rounded-md"
+          src="/src/images/blog_img/images/product/product-1.png"
+          alt=""
+        />
+
+        <div class="flex gap-4 mt-2 mx-4">
+          <p>Promotions</p>
+          <p>June 13, 2021</p>
+        </div>
+        <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+          Five things you need to carry on a daily basis
+        </h1>
+      </div>
+      <div class="bg-[#ffffff] rounded-md shadow hover:shadow-xl duration-500">
+        <img
+          class="w-full rounded-md"
+          src="/src/images/blog_img/images/product/product-1.png"
+          alt=""
+        />
+
+        <div class="flex gap-4 mt-2 mx-4">
+          <p>Promotions</p>
+          <p>June 13, 2021</p>
+        </div>
+        <h1 class="text-[#000] text-xl font-bold mx-4 py-4 mb-6">
+          Five things you need to carry on a daily basis
+        </h1>
+      </div>
+    </div>
+  </div>
+</MainLayout>

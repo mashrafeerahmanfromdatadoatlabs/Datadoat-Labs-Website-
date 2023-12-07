@@ -1,0 +1,124 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Datadot Labs | Press kit">
+  <main>
+    <!----------------- banner section start  ---------------------->
+    <section
+      class="bg-gray-100 grid lg:grid-cols-2 justify-between items-center lg:px-12 px-6 pt-12 py-6"
+    >
+      <div class="">
+        <h1 class="lg:text-5xl text-3xl font-bold lg:mb-4">Pathao Press</h1>
+        <p class="text-xl text-gray-600">
+          Our press release, coverage and press kit
+        </p>
+      </div>
+      <div class="img md:block hidden">
+        <img
+          class="h-56 mx-auto"
+          src="https://pathao.com/wp-content/themes/webpathao/assets/images/press-title.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!----------------- banner section end  ---------------------->
+
+    <!-- --------------------- Press Recesses section start----------------->
+    <section
+      class="grid grid-cols-12 lg:gap-16 items-start lg:px-12 px-6 py-12"
+    >
+      <!------------ navigation start---------->
+      <section class="lg:col-span-3 col-span-12">
+        <ul class="flex flex-col gap-1">
+          <a href="press-releases.html" class="mb-4">
+            <li
+              class="pb-4 border-b hover:text-blue-600 font-semibold duration-300"
+            >
+              Press Recesses
+            </li>
+          </a>
+
+          <a href="press-kit.html" class="mb-4">
+            <li
+              class="pb-4 border-b text-blue-600 hover:text-blue-600 font-semibold duration-300"
+            >
+              Press Kit
+            </li>
+          </a>
+
+          <a href="contact-us.html" class="mb-4">
+            <li
+              class="pb-4 border-b hover:text-blue-600 font-semibold duration-300"
+            >
+              Contact
+            </li>
+          </a>
+        </ul>
+      </section>
+      <!------------ navigation end---------->
+
+      <!-- --------------------------main  context section start------------------ -->
+      <section class="lg:col-span-9 col-span-12 lg:mt-0 mt-12">
+        <h2 class="text-2xl font-semibold pb-8">Press Release</h2>
+        <hr />
+        <!-- ---------logos  section----------- -->
+        <div class="mt-12">
+          <div class="md:flex justify-between mb-10">
+            <div>
+              <h2 class="text-3xl font-bold Title">Brand Assets</h2>
+            </div>
+            <div>
+              <a
+                class="border-[1.5px] cursor-pointer px-4 md:my-0 my-6 py-2 justify-between rounded-md text-blue-600 font-semibold flex gap-2 items-center"
+                href="images/Pathao-Logo_Horizontal_with_TagLine.png"
+                download
+              >
+                Download Brand Assets
+                <img src="images/download.png" class="w-5 h-5" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="w-[50%] ml-auto">
+            <img
+              class="h-96 w-full mb-4"
+              src="images/Pathao-Logo_Horizontal_with_TagLine.png"
+              alt=""
+            />
+            <p>Company Logo</p>
+          </div>
+        </div>
+        <div class="mt-12">
+          <div class="md:flex justify-between mb-10">
+            <div>
+              <h2 class="text-3xl font-bold Title">Images</h2>
+            </div>
+            <div>
+              <a
+                class="border-[1.5px] cursor-pointer px-4 md:my-0 my-6 py-2 justify-between rounded-md text-blue-600 font-semibold flex gap-2 items-center"
+                href="images/Pathao-Logo_Horizontal_with_TagLine.png"
+                download
+              >
+                Download Images
+                <img src="images/download.png" class="w-5 h-5" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="w-[50%] ml-auto">
+            <img
+              class="h-96 w-full mb-4"
+              src="images/Pathao-Logo_Horizontal_with_TagLine.png"
+              alt=""
+            />
+            <p>Company Logo</p>
+          </div>
+        </div>
+
+        <!-- --------------------------main  context section end------------------ -->
+      </section>
+      <!-- --------------------- Press Recesses section end----------------->
+    </section>
+  </main>
+</MainLayout>

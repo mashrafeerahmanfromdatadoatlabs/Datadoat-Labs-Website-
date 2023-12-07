@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .development ul {
+    @apply max-[550px]:hidden;
+  }
+  .tab-itm {
+    @apply items-center content-center justify-center w-[100%] md:px-16 px-4 hidden transition-all p-4 max-[550px]:flex max-[650px]:w-[100%] max-[550px]:flex-col;
+  }
+  .tab-itm.selected_tab {
+    @apply flex;
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+  .tab-itm h1 {
+    @apply max-[1000px]:text-lg max-[650px]:text-base;
+  }
+  .tab-itm p {
+    @apply max-[1000px]:text-sm max-[650px]:text-xs;
+  }
+  .tab-btn {
+    @apply max-[900px]:flex;
+  }
+  .tab-btn p {
+    @apply max-[650px]:text-xs;
+  }
+  .tab-btn button:first-child {
+    @apply max-[900px]:mr-2;
+  }
+
+  .faq-itm h4 {
+    @apply text-lg;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* ... */
+}

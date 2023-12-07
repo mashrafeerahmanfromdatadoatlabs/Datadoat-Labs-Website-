@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: Uni-Neue;
+  src: url("../Font/UniNeue-Trial-Bold.ttf");
+}
+
+@font-face {
+  font-family: JKAbode;
+  src: url("../Fonts/JKAbode-Demo.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Title {
+  font-size: 46px;
+  font-family: Uni-Neue;
+  margin-bottom: 15px;
+}
+
+.Title-font {
+  font-family: Uni-Neue;
+}
+
+.coming-span {
+  color: blue;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Uni-Neue;
+}
+
+nav ul li span {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav ul li span:hover {
+  transition: transform 0.5s;
+}
+
+nav ul li span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+nav ul li span:hover::after {
+  transform: scaleX(1);
+  background-color: black;
+}
+
+.nav-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  /* transition: all .4s cubic-bezier(.4,0,1,1); */
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.19, 1);
+  /* transition: all .3s ease-in; */
+  transform: rotateX(90deg);
+  transform-origin: top center;
+}
+
+.nav-menu-2 {
+  position: absolute;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.19, 1);
+  transform: rotateX(90deg);
+  transform-origin: top center;
+  border: none;
+}
+
+/* -----------------nav menu animation start--------------- */
+
+.nav-menu-2 div ul li {
+  font-size: 16px;
+  margin: 6px auto;
+  transition: all 0.5s;
+}
+
+/* Copied from Main */
+.intro {
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.intro .Img-section {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 28px;
+  margin-right: 16px;
+}
+
+.intro-text h1 {
+  font-family: Uni-Neue;
+  font-weight: 600;
+  color: #262626;
+}
+
+.intro-text > p {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.689),
+        rgba(0, 0, 0, 0.603)
+      ),
+      url("../images/Banner_img/Laptop-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  .intro-text h1 {
+    padding-top: 40px;
+    color: white;
+  }
+  .Img-section div img {
+    display: none;
+  }
+}
+
+.chatbtn {
+  transition: all 500ms;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-style: solid;
+}
+
+/* .chatbtn svg path {
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+
+.btn svg {
+  width: clamp(0.5rem, 3vw, 6rem);
+  fill: rgba(0, 0, 0, 0.902);
+  display: inline-block;
+} */
+
+.btn p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* -----------------------------------tab section css start ---------------------------- */
+.tab {
+  display: none;
+  animation: fadeIn 0.5s ease; /* Add fadeIn animation */
+}
+
+/* Style the tab content container */
+.tab-content {
+  padding: 15px;
+}
+
+/* Style the navigation menu */
+.tab-links {
+  display: flex;
+  list-style: none;
+  padding: 0 8px;
+}
+
+.tab-link {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tab-link img {
+  width: auto;
+  height: auto;
+}
+
+button {
+  position: relative;
+}
+
+button .btn-icon {
+  transition: transform 0.5s;
+}
+
+button:hover .btn-icon {
+  transform: translateX(10px);
+}
+
+@media screen and (max-width: 600px) {
+  .tab-content {
+    text-align: center;
+  }
+  .tab-content p {
+    font-size: 15px;
+    margin-top: 6px;
+  }
+  .tab-link img {
+    width: 24px;
+    height: 24px;
+  }
+}
+/* Add fadeIn animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* -----------------------------------tab section css end ---------------------------- */
+
+.selected p {
+  font-weight: 600;
+}
+
+.faq-itm {
+  cursor: pointer;
+}
+
+.faq-itm img {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.19, 1);
+}
+
+.faq-itm + p,
+.faq-itm + div {
+  transform-origin: top center;
+  transform: rotateX(90deg);
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.19, 1);
+}
+
+.faq-expanded + p,
+.faq-expanded + div {
+  opacity: 1;
+  transform: rotateX(0deg);
+
+  /* max-height: max-content; */
+}
+
+.show {
+  display: block !important;
+}
+
+/* .plan-section img {
+  width: 100%;
+  height: 248px;
+} */
+
+@media (max-width: 900px) {
+  .intro-text {
+    left: 0;
+    right: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-btn p {
+    font-size: 0.8em;
+  }
+
+  .filter-btn img {
+    width: 32px;
+  }
+}
+
+/* ------------------slider section css --------------------------------- */
+.slider-section {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 2.5) - 30px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 80vh;
+  list-style: none;
+  background: #166534;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8b53ff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .slider-section {
+    height: fit-content;
+    padding-top: 40px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  .carousel .card {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-section {
+    height: fit-content;
+    padding-top: 20px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .carousel .card {
+    height: 50vh;
+  }
+}
+
+/* ------------------------feature client section css ------------------------ */
+.scroll {
+  display: flex;
+  gap: 16px;
+  height: 400px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    0deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    0deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: animate var(--t) linear infinite;
+  animation-delay: var(--t) * -1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.scroll div div {
+  width: auto;
+  height: 150px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.scroll div div img {
+  border-radius: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .scroll div div {
+    height: 100px;
+  }
+}
+
+/* ---------------------------------Recommendations css start---------------------- */
+.slider-container {
+  max-width: 1600px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .img-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+}
+
+.testimonial-card .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+}
+
+.slider-btn-container {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 15px; /* Adjust top spacing as needed */
+}
+.ratting i {
+  color: orange;
+}
+
+.slider-btn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 9999px;
+  margin: 0 10px;
+}
+
+.slider-btn-left,
+.slider-btn-right {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 50%; /* 50% to show two cards on medium devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-container {
+    margin: 20px;
+  }
+  .testimonial-card {
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+/* -----------------------------footer css--------------------------------- */
+
+footer ul li {
+  margin: 4px 0;
+}
+footer ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 4px;
+}
+
+footer ul li a:hover {
+  transition: transform 0.5s;
+  color: rgb(235, 235, 235);
+}
+
+footer ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+footer ul li a:hover::after {
+  transform: scaleX(1);
+  background-color: white;
+}
+
+footer .social-links {
+  font-size: 28px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------------------------Web development page style start------------ */
+.web-development-list-items li {
+  list-style: inside;
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+}
+.web-dev-banner .banner-img {
+  background-image: url("../images/Banner_img/development-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .web-dev-banner .banner-img {
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+    background-image: linear-gradient(to top, white, transparent),
+      url("../images/Banner_img/development-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .web-dev-banner .banner-info {
+    position: relative;
+    margin-top: 40%;
+  }
+  .web-dev-banner .banner-info .btn-section {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .web-dev-banner .banner-img {
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+    background-image: linear-gradient(to top, rgb(158, 156, 156), transparent),
+      url("../images/Banner_img/development-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+  }
+  .web-dev-banner .banner-info {
+    position: relative;
+    margin-top: 20%;
+  }
+}
+
+/* ------------------------------maintenance page css---------------------- */
+
+.maintenance-company-logos img {
+  width: auto;
+  max-height: 25px;
+}
+
+/* -----------------------------Careers page css----------------------------- */
