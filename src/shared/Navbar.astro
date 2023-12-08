@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import NavArrow from "../images/angle-down.svg";
+---
+
 <header
   class="flex justify-between items-center content-center m-4 ml-10 mr-10"
 >
@@ -15,7 +20,7 @@
           class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
         >
           <p>Services</p>
-          <img class="w-8 h-8" src="/down-arrow.png" alt="" />
+          <Image src={NavArrow} alt="" />
         </span>
         <section
           class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu"
