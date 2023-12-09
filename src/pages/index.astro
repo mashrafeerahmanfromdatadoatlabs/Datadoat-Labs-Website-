@@ -1,5 +1,16 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import paymentDevice from "/public/images/Banner_img/payment-device.png";
+import Laptop from "/public/images/Banner_img/Laptop-banner.png";
+import Phone from "/public/images/Banner_img/phone-banner.png";
+import MobileIcon from "/public/images/mobile.png";
+import WebIcon from "/public/images/web.png";
+import SoftwareIcon from "/public/images/software.png";
+import WhatsappIcon from "/public/images/social-icon/whatsapp.png";
+import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
+import parson1 from "/public/images/parson-1.png";
+import parson2 from "/public/images/parson-2.png";
 ---
 
 <MainLayout title="Datadoat Labs | Softwares made in Bangladesh for the World">
@@ -39,25 +50,17 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
     <div class="Img-section lg:w-[120%]">
       <div class="mr-7">
-        <img
+        <Image
           class="w-auto h-auto"
-          src="/src/images/Banner_img/payment-device.png"
+          src={paymentDevice}
           alt="Payment Device Image"
         />
       </div>
       <div class="z-10">
-        <img
-          class="w-auto h-auto"
-          src="/src/images/Banner_img/Laptop-banner.png"
-          alt="Laptop Banner Image"
-        />
+        <Image class="w-auto h-auto" src={Laptop} alt="Laptop Banner Image" />
       </div>
       <div class="md:mt-12 -ml-6">
-        <img
-          class="w-auto h-auto"
-          src="/src/images/Banner_img/phone-banner.png"
-          alt="Phone Banner Image"
-        />
+        <Image class="w-auto h-auto" src={Phone} alt="Phone Banner Image" />
       </div>
     </div>
   </section>
@@ -80,25 +83,25 @@ import MainLayout from "../layouts/MainLayout.astro";
     <ul class="tab-links justify-between">
       <li class="tab-link" onclick="openTab(event, 'tab1')">
         <div class="flex justify-center items-center md:gap-4 gap-2">
-          <img src="/src/images/mobile.png" alt="" />
+          <Image src={MobileIcon} alt="" />
           <p class="md:text-xl text-sm">App</p>
         </div>
       </li>
       <li class="tab-link" onclick="openTab(event, 'tab2')">
         <div class="flex justify-center items-center md:gap-4 gap-2">
-          <img src="/src/images/web.png" alt="" />
+          <Image src={WebIcon} alt="" />
           <p class="md:text-xl text-sm">Website</p>
         </div>
       </li>
       <li class="tab-link" onclick="openTab(event, 'tab3')">
         <div class="flex justify-center items-center md:gap-4 gap-2">
-          <img src="/src/images/software.png" alt="" />
+          <Image src={SoftwareIcon} alt="" />
           <p class="md:text-xl text-sm">Software</p>
         </div>
       </li>
       <li class="tab-link" onclick="openTab(event, 'tab4')">
         <div class="flex justify-center items-center md:gap-4 gap-2">
-          <img src="/src/images/software.png" alt="" />
+          <Image src={SoftwareIcon} alt="" />
           <p class="md:text-xl text-sm">Maintenance</p>
         </div>
       </li>
@@ -153,13 +156,13 @@ import MainLayout from "../layouts/MainLayout.astro";
                 class="chatbtn btn flex gap-3 items-center border border-black px-6 py-2 rounded"
               >
                 <h6>WhatsApp</h6>
-                <img
+                <Image
                   alt="icon"
                   loading="lazy"
                   decoding="async"
                   data-nimg="1"
                   style="color: transparent"
-                  src="/src/images/social-icon/whatsapp.png"
+                  src={WhatsappIcon}
                   width="21"
                   class="pt-1"
                 />
@@ -169,7 +172,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
         <div class="md:block hidden">
           <img
-            src="/src/images/digital-lifestyle-animate.svg"
+            src="/public/images/digital-lifestyle-animate.svg"
             alt="UI/UX Design"
             class="flex-1 h-90 max-w-[100%] mx-auto"
           />
@@ -224,13 +227,13 @@ import MainLayout from "../layouts/MainLayout.astro";
                 class="chatbtn btn flex gap-3 border border-black px-6 py-2 rounded"
               >
                 <h6>WhatsApp</h6>
-                <img
+                <Image
                   alt="icon"
                   loading="lazy"
                   decoding="async"
                   data-nimg="1"
                   style="color: transparent"
-                  src="/src/images/social-icon/whatsapp.png"
+                  src={WhatsappIcon}
                   width="21"
                   class="pt-1"
                 />
@@ -240,7 +243,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
         <div class="md:block hidden">
           <img
-            src="/src/images/insert-block-animate.svg"
+            src="/public/images/insert-block-animate.svg"
             alt="Website Development"
             class="flex-1 h-90 max-w-[100%] mx-auto"
           />
@@ -298,13 +301,13 @@ import MainLayout from "../layouts/MainLayout.astro";
                 class="chatbtn btn flex items-center gap-3 border border-black px-6 py-2 rounded"
               >
                 <h6>WhatsApp</h6>
-                <img
+                <Image
                   alt="icon"
                   loading="lazy"
                   decoding="async"
                   data-nimg="1"
                   style="color: transparent"
-                  src="/src/images/social-icon/whatsapp.png"
+                  src={WhatsappIcon}
                   width="21"
                   class="pt-1"
                 />
@@ -314,7 +317,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
         <div class="md:block hidden">
           <img
-            src="/src/images/software-code-testing-animate.svg"
+            src="/public/images/software-code-testing-animate.svg"
             alt="Website Development"
             class="flex-1 h-90 max-w-[80%] mx-auto"
           />
@@ -371,13 +374,13 @@ import MainLayout from "../layouts/MainLayout.astro";
                 class="chatbtn btn flex items-center gap-3 border border-black px-6 py-2 rounded"
               >
                 <h6>WhatsApp</h6>
-                <img
+                <Image
                   alt="icon"
                   loading="lazy"
                   decoding="async"
                   data-nimg="1"
                   style="color: transparent"
-                  src="/src/images/social-icon/whatsapp.png"
+                  src={WhatsappIcon}
                   width="21"
                   class="pt-1"
                 />
@@ -387,7 +390,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
         <div class="md:block hidden">
           <img
-            src="/src/images/software-code-testing-animate.svg"
+            src="/public/images/software-code-testing-animate.svg"
             alt="Website Development"
             class="flex-1 h-90 max-w-[80%] mx-auto"
           />
@@ -468,7 +471,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section class="my-20 md:px-12 px-4">
     <div class="grid lg:grid-cols-2 gap-16 items-center justify-between">
       <div class="flex flex-col gap-2">
-        <h3 class="text-3xl font-bold mb-2">The Safest Platform</h3>
+        <h3 class="text-3xl font-bold mb-2 Title-font">The Safest Platform</h3>
         <p class="text-[#293A4E] font-medium text-lg">
           We care about your safety. And to ensure it, we’ve introduced
           insurance for all of our users, rides & captains. Your safety is our
@@ -484,7 +487,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </a>
       </div>
       <div class="flex flex-col gap-2">
-        <h3 class="text-3xl font-bold mb-2">We Care About You</h3>
+        <h3 class="text-3xl font-bold mb-2 Title-font">We Care About You</h3>
         <p class="text-[#293A4E] font-medium text-lg">
           We care about your safety. And to ensure it, we’ve introduced
           insurance for all of our users, rides & captains. Your safety is our
@@ -623,54 +626,128 @@ import MainLayout from "../layouts/MainLayout.astro";
         <div class="scroll" style="--t:20s">
           <div class="">
             <div class="logo">
-              <img src="/src/images/company1.png" alt="" />
+              <img
+                src="/public/images/company1.png"
+                alt="company1"
+                decoding="async"
+                loading="lazy"
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company2.png" alt="" />
+              <img
+                src="/public/images/company2.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company3.png" alt="" />
+              <img
+                src="/public/images/company3.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company4.png" alt="" />
+              <img
+                src="/public/images/company4.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company5.png" alt="" />
+              <img
+                src="/public/images/company5.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
           </div>
           <div class="">
             <div class="logo">
-              <img src="/src/images/company1.png" alt="" />
+              <img
+                src="/public/images/company1.png"
+                alt="company1"
+                decoding="async"
+                loading="lazy"
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company2.png" alt="" />
+              <img
+                src="/public/images/company2.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company3.png" alt="" />
+              <img
+                src="/public/images/company3.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company4.png" alt="" />
+              <img
+                src="/public/images/company4.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company5.png" alt="" />
+              <img
+                src="/public/images/company5.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
           </div>
-
           <div class="">
             <div class="logo">
-              <img src="/src/images/company1.png" alt="" />
+              <img
+                src="/public/images/company1.png"
+                alt="company1"
+                decoding="async"
+                loading="lazy"
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company2.png" alt="" />
+              <img
+                src="/public/images/company2.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company3.png" alt="" />
+              <img
+                src="/public/images/company3.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company4.png" alt="" />
+              <img
+                src="/public/images/company4.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
             <div class="logo">
-              <img src="/src/images/company5.png" alt="" />
+              <img
+                src="/public/images/company5.png"
+                decoding="async"
+                loading="lazy"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -694,8 +771,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               What technologies and tools does Datadoat use for software
               development?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -717,8 +795,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               How does Datadoat ensure the security and confidentiality of our
               business data?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -740,8 +819,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               What is the process for project development, and how do we stay
               updated on progress?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -763,8 +843,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               Can Datadoat handle the entire development process, including
               design and testing?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -785,8 +866,9 @@ import MainLayout from "../layouts/MainLayout.astro";
             >
               What is the estimated timeline for completing our project?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -807,8 +889,9 @@ import MainLayout from "../layouts/MainLayout.astro";
             >
               How does Datadoat determine the cost of our project?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -830,8 +913,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               How do you handle potential changes or additions during the
               development process?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -852,8 +936,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               Do you provide ongoing support and maintenance after the project
               is launched?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -875,8 +960,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               Whats Datadoat's approach to ensuring the software/app/website is
               user-friendly and intuitive?
             </h5>
-            <img
-              src="/src/images/Frequently-Asked-dropdown.png"
+            <Image
+              src={dropdownIcon}
+              loading="lazy"
               class="w-5 h-6"
               alt="Expandable"
             />
@@ -895,8 +981,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 How will you ensure that the software/app/website is scalable
                 for future growth?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -916,8 +1003,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               >
                 What is Datadoats payment terms and options?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -938,8 +1026,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 What support does Datadoat offers post-launch in case of issues
                 or enhancements?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -954,7 +1043,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
       </div>
     </section>
- </section>
+  </section>
   <!-- ---------------------Frequently Asked Questions end----------------- -->
 
   <!-- ----------------------Recommendations start--------------------- -->
@@ -1161,8 +1250,8 @@ import MainLayout from "../layouts/MainLayout.astro";
       </button>
     </div>
     <div class="flex justify-between -translate-y-10">
-      <img class="w-auto md:h-96 h-36" src="/src/images/parson-1.png" alt="" />
-      <img class="w-auto md:h-96 h-36" src="/src/images/parson-2.png" alt="" />
+      <Image class="w-auto md:h-96 h-36" src={parson1} alt="" loading="lazy" />
+      <Image class="w-auto md:h-96 h-36" src={parson2} alt="" loading="lazy" />
     </div>
   </section>
   <!-- ----------------------Contact today end--------------------- -->

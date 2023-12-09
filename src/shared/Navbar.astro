@@ -2,6 +2,14 @@
 import { Image } from "astro:assets";
 import NavDropdownImg from "../../public/images/down-arrow.png";
 import logo from "../../public/images/datadoat_logo_main.png";
+import NavMenuIcon from "../../public/images/open.svg";
+import webBrowserIcon from "../../public/images/web-browser.png";
+import webDevIcon from "../../public/images/monitor.png";
+import MobileAppIcon from "../../public/images/static-img/application.wi2n.png";
+import coddingIcon from "../../public/images/coding.png";
+import TerminalIcon from "../../public/images/terminal.png";
+import scalabilityIcon from "../../public/images/scalability.png";
+import repairIcon from "../../public/images/repair.png";
 ---
 
 <header
@@ -17,7 +25,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
         >
           <p>Services</p>
-          <Image src={NavDropdownImg} alt="" class="w-6 h-8" />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </span>
         <section
           class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu"
@@ -27,15 +35,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 hover:border-blue-600 rounded-xl"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/web-browser.png"
-                  width="32"
-                  height="32"
+                <Image
+                  src={webBrowserIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
                 />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="web-dev" target="">
@@ -58,16 +61,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/monitor.png"
-                  width="32"
-                  height="32"
-                />
+                <Image src={webDevIcon} alt="web-browser.png" class="w-8 h-8" />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="web-application" target="">
                     <h2
@@ -89,15 +83,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/static-img/application.wi2n.svg"
-                  width="32"
-                  height="32"
+                <Image
+                  src={MobileAppIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
                 />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="mobile-application" target="">
@@ -120,15 +109,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 px-4 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/coding.png"
-                  width="32"
-                  height="32"
+                <Image
+                  src={coddingIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
                 />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="custom-software-dev" target="">
@@ -152,15 +136,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/terminal.png"
-                  width="32"
-                  height="32"
+                <Image
+                  src={TerminalIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
                 />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="api" target="">
@@ -183,15 +162,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/scalability.png"
-                  width="32"
-                  height="32"
+                <Image
+                  src={scalabilityIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
                 />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="software-testing" target="">
@@ -215,16 +189,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
               <div
                 class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
               >
-                <img
-                  alt="icon"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="1"
-                  style="color: transparent"
-                  src="/src/images/repair.png"
-                  width="32"
-                  height="32"
-                />
+                <Image src={repairIcon} alt="web-browser.png" class="w-8 h-8" />
                 <section class="ml-[15px] cursor-pointer">
                   <a href="software-maintenance" target="">
                     <h2
@@ -253,7 +218,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
         >
           <p>Projects</p>
-          <img class="w-8 h-8" src="/src/images/down-arrow.png" alt="" />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </span>
         <section
           class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
@@ -312,7 +277,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
         >
           <p>Resources</p>
-          <img class="w-8 h-8" src="/src/images/down-arrow.png" alt="" />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </span>
         <section
           class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
@@ -346,14 +311,14 @@ import logo from "../../public/images/datadoat_logo_main.png";
     </ul>
 
     <div class="hidden max-[1049px]:flex" id="mobile-menu">
-      <img
+      <Image
         alt="close"
         loading="lazy"
         decoding="async"
         data-nimg="1"
         class="mr-[5px] cursor-pointer"
         style="color: transparent"
-        src="/src/images/open.svg"
+        src={NavMenuIcon}
         width="24"
         height="24"
       />
@@ -368,16 +333,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           <p class="text-xl font-semibold leading-9 text-accent ml-2">
             Services
           </p>
-          <img
-            alt="arrow-down"
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            style="color: transparent"
-            src="/src/images/angle-down.svg"
-            width="24"
-            height="24"
-          />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </div>
 
         <div class="flex-1 flex-grow-[2]">
@@ -385,15 +341,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/web-browser.png"
-                width="32"
-                height="32"
+              <Image
+                src={webBrowserIcon}
+                alt="web-browser.png"
+                class="w-8 h-8"
               />
               <section class="ml-[15px] cursor-pointer">
                 <a href="web-dev" target="">
@@ -416,16 +367,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/monitor.png"
-                width="32"
-                height="32"
-              />
+              <Image src={webDevIcon} alt="web-browser.png" class="w-8 h-8" />
               <section class="ml-[15px] cursor-pointer">
                 <a href="web-application" target="">
                   <h2
@@ -447,15 +389,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/static-img/application.wi2n.svg"
-                width="32"
-                height="32"
+              <Image
+                src={MobileAppIcon}
+                alt="web-browser.png"
+                class="w-8 h-8"
               />
               <section class="ml-[15px] cursor-pointer">
                 <a href="mobile-application" target="">
@@ -478,16 +415,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/coding.png"
-                width="32"
-                height="32"
-              />
+              <Image src={coddingIcon} alt="web-browser.png" class="w-8 h-8" />
               <section class="ml-[15px] cursor-pointer">
                 <a href="custom-software-dev" target="">
                   <h2
@@ -509,16 +437,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/terminal.png"
-                width="32"
-                height="32"
-              />
+              <Image src={TerminalIcon} alt="web-browser.png" class="w-8 h-8" />
               <section class="ml-[15px] cursor-pointer">
                 <a href="api" target="">
                   <h2
@@ -540,15 +459,10 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/scalability.png"
-                width="32"
-                height="32"
+              <Image
+                src={scalabilityIcon}
+                alt="web-browser.png"
+                class="w-8 h-8"
               />
               <section class="ml-[15px] cursor-pointer">
                 <a href="software-testing" target="">
@@ -571,16 +485,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
             <div
               class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
             >
-              <img
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                style="color: transparent"
-                src="/src/images/repair.png"
-                width="32"
-                height="32"
-              />
+              <Image src={repairIcon} alt="web-browser.png" class="w-8 h-8" />
               <section class="ml-[15px] cursor-pointer">
                 <a href="software-maintenance" target="">
                   <h2
@@ -608,16 +513,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           <p class="text-xl font-semibold leading-9 text-accent ml-2">
             Projects
           </p>
-          <img
-            alt="arrow-down"
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            style="color: transparent"
-            src="/src/images/angle-down.svg"
-            width="24"
-            height="24"
-          />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </div>
 
         <div class="p-4 flex-1 flex-grow-[2]">
@@ -655,16 +551,7 @@ import logo from "../../public/images/datadoat_logo_main.png";
           <p class="text-xl font-semibold leading-9 text-accent ml-2">
             Resources
           </p>
-          <img
-            alt="arrow-down"
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            style="color: transparent"
-            src="/src/images/angle-down.svg"
-            width="24"
-            height="24"
-          />
+          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
         </div>
 
         <div>

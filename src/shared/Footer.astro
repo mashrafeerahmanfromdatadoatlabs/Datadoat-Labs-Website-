@@ -1,3 +1,13 @@
+---
+import { Image } from "astro:assets";
+import WhatsappIcon from "/public/images/whatsapp.png";
+import EmailIcon from "/public/images/email.png";
+import facebookIcon from "/public/images/social-icon/facebook (2).png";
+import instagramIcon from "/public/images/social-icon/instagram (1).png";
+import linkedinIcon from "/public/images/social-icon/linkedin-logo.png";
+import threadsIcon from "/public/images/social-icon/threads.png";
+---
+
 <footer class="bg-black text-white md:px-20 px-6 py-20">
   <section class="md:flex gap-16">
     <!-- ---------row-1---------- -->
@@ -13,13 +23,13 @@
             class="flex items-center justify-center rounded-lg box-border font-medium duration-500 px-4 py-2 text-xs 2xl:text-base 2xl:leading-4 bg-btn-pattern hover:bg-blue-700 bg-blue-600 text-white bg-accent"
             type="submit"
           >
-            <img
+            <Image
               alt="icon"
               loading="lazy"
               decoding="async"
               data-nimg="1"
               style="color: transparent"
-              src="/src/images/email.png"
+              src={EmailIcon}
               width="21"
               height="18"
             />
@@ -34,13 +44,13 @@
             class="flex items-center justify-center rounded-lg box-border font-medium duration-500 px-4 py-2 text-xs 2xl:text-base 2xl:leading-4 bg-secondary-500 hover:bg-blue-700 bg-blue-600 text-white bg-accent"
             type="submit"
           >
-            <img
+            <Image
               alt="icon"
               loading="lazy"
               decoding="async"
               data-nimg="1"
               style="color: transparent"
-              src="images/whatsapp.png"
+              src={WhatsappIcon}
               width="21"
               height="18"
             />
@@ -164,10 +174,14 @@
           aria-label="link Facebook"
           target="_blank"
         >
-          <img
-            src="/src/images/social-icon/facebook (2).png"
+          <Image
+            src={facebookIcon}
             class="w-8 h-8"
             alt="facebook"
+            alt="icon"
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
           />
         </a>
         <a
@@ -175,10 +189,14 @@
           aria-label="link instagram"
           target="_blank"
         >
-          <img
-            src="/src/images/social-icon/instagram (1).png"
+          <Image
+            src={instagramIcon}
             class="w-8 h-8"
-            alt="instagram"
+            alt="instagramIcon"
+            alt="icon"
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
           />
         </a>
 
@@ -187,10 +205,14 @@
           aria-label="link linkedin"
           target="_blank"
         >
-          <img
-            src="/src/images/social-icon/linkedin-logo.png"
+          <Image
+            src={linkedinIcon}
             class="w-8 h-8"
-            alt="linkedin"
+            alt="linkedinIcon"
+            alt="icon"
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
           />
         </a>
 
@@ -199,10 +221,14 @@
           aria-label="link linkedin"
           target="_blank"
         >
-          <img
-            src="/src/images/social-icon/threads.png"
+          <Image
+            src={threadsIcon}
             class="w-8 h-8"
-            alt="instagram"
+            alt="threadsIcon"
+            alt="icon"
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
           />
         </a>
       </div>

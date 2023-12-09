@@ -37,13 +37,13 @@ let mobMenuToggle = document.querySelector("#mobile-menu");
 mobMenuToggle.addEventListener("click", (ev) => {
   mobMenuToggle.nextElementSibling.classList.toggle("show");
   mobMenuToggle.querySelector("img").getAttribute("src") ==
-  "/src/images/open.svg"
+  "../public/images/open.svg"
     ? mobMenuToggle
         .querySelector("img")
-        .setAttribute("src", "/src/images/close.svg")
+        .setAttribute("src", "../public/images/close.svg")
     : mobMenuToggle
         .querySelector("img")
-        .setAttribute("src", "/src/images/open.svg");
+        .setAttribute("src", "../public/images/open.svg");
 });
 
 // -------------------------------slider section js code -------------------
@@ -175,6 +175,7 @@ function nextSlide() {
 // -------------------------tab section js start---------------------------
 
 function openTab(event, tabId) {
+  console.log(openTab, "hello");
   // Hide all tabs
   var tabs = document.getElementsByClassName("tab");
   for (var i = 0; i < tabs.length; i++) {
