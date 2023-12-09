@@ -141,28 +141,8 @@ nav ul li span:hover::after {
 }
 
 .chatbtn {
-  transition: all 500ms;
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  align-items: center;
-  justify-items: center;
-  border-style: solid;
+  margin-top: 13px;
 }
-
-/* .chatbtn svg path {
-  transition: all 500ms;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -ms-transition: all 500ms;
-  -o-transition: all 500ms;
-}
-
-.btn svg {
-  width: clamp(0.5rem, 3vw, 6rem);
-  fill: rgba(0, 0, 0, 0.902);
-  display: inline-block;
-} */
 
 .btn p {
   font-size: 18px;

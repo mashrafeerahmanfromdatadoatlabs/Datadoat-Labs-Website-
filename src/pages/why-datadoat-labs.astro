@@ -1,5 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
 ---
 
 <MainLayout title="Datadot Labs | Why Datadoat Labs">
@@ -18,7 +20,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div class="md:flex gap-6 w-[70%] btn-section">
         <a href="contact.html" target="_blank">
           <button
-            class="chatbtn btn bg-accent hover:bg-blue-700 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between w-full"
+            class="chatbtn btn bg-accent hover:bg-blue-700 bg-blue-600 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between w-full"
           >
             <p class="font-light whitespace-nowrap">Contact us</p>
           </button>
@@ -42,7 +44,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   <!-- ------------------whay datadot lab section start------------------- -->
   <section class="md:mx-12 mx-6 md:my-32 bg-gray-100 p-4 py-12">
     <div class="text-center">
-      <h1 class="Title text-4xl font-semibold">Why 10 Minute School?</h1>
+      <h1 class="Title-font text-4xl font-semibold">Why 10 Minute School?</h1>
       <p class="text-gray-700 text-xl my-8 md:w-[68%] mx-auto">
         We are the fastest growing EdTech of Bangladesh. We believe in promoting
         a workplace where everyone has the opportunity to grow, create and
@@ -61,7 +63,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           />
         </div>
         <div class="px-6">
-          <h2 class="title text-3xl font-bold mb-6 Title">
+          <h2 class="title text-3xl font-bold mb-6 Title-font">
             Employee-centric policies
           </h2>
           <p class="text-gray-700 font-medium">
@@ -80,7 +82,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           />
         </div>
         <div class="px-6">
-          <h2 class="title text-3xl font-bold mb-6 Title">
+          <h2 class="title text-3xl font-bold mb-6 Title-font">
             Learning Opportunities
           </h2>
           <p class="text-gray-700 font-medium">
@@ -100,7 +102,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           />
         </div>
         <div class="px-6">
-          <h2 class="title text-3xl font-bold mb-6 Title">
+          <h2 class="title text-3xl font-bold mb-6 Title-font">
             Health and Wellness
           </h2>
           <p class="text-gray-700 font-medium">
@@ -130,27 +132,31 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
       <div class="text-container md:px-20 flex flex-col gap-10 md:mt-0 mt-10">
         <div>
-          <h3 class="text-[24px] font-bold Title">Customer First.</h3>
+          <h3 class="text-[26px] font-bold Title-font mb-3">Customer First.</h3>
           <p class="text-xl text-gray-700">
             Pathao exists to serve. Everything we do impact thousands of people.
           </p>
         </div>
         <div>
-          <h3 class="text-[24px] font-bold Title">One Pathao.</h3>
+          <h3 class="text-[26px] font-bold Title-font mb-3">One Pathao.</h3>
           <p class="text-xl text-gray-700">
             Nothing at Pathao is someone else’s problem. We all work together on
             a shared mission.
           </p>
         </div>
         <div>
-          <h3 class="text-[24px] font-bold Title">Everyone Matters.</h3>
+          <h3 class="text-[26px] font-bold Title-font mb-3">
+            Everyone Matters.
+          </h3>
           <p class="text-xl text-gray-700">
             Anyone who is a part of the Pathao family is valuable to us. No one
             is of any less important than someone else.
           </p>
         </div>
         <div>
-          <h3 class="text-[24px] font-bold Title">Empathy and Kindness.</h3>
+          <h3 class="text-[26px] font-bold Title-font mb-3">
+            Empathy and Kindness.
+          </h3>
           <p class="text-xl text-gray-700">
             We want our people to be smart and driven but also be kind and have
             empathy for others
@@ -285,54 +291,54 @@ import MainLayout from "../layouts/MainLayout.astro";
           <div class="scroll" style="--t:20s">
             <div class="">
               <div class="logo">
-                <img src="/src/images/company1.png" alt="" />
+                <img src="/images/company1.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company2.png" alt="" />
+                <img src="/images/company2.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company3.png" alt="" />
+                <img src="/images/company3.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company4.png" alt="" />
+                <img src="/images/company4.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company5.png" alt="" />
+                <img src="/images/company5.png" alt="" />
               </div>
             </div>
             <div class="">
               <div class="logo">
-                <img src="/src/images/company1.png" alt="" />
+                <img src="/images/company1.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company2.png" alt="" />
+                <img src="/images/company2.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company3.png" alt="" />
+                <img src="/images/company3.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company4.png" alt="" />
+                <img src="/images/company4.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company5.png" alt="" />
+                <img src="/images/company5.png" alt="" />
               </div>
             </div>
 
             <div class="">
               <div class="logo">
-                <img src="/src/images/company1.png" alt="" />
+                <img src="/images/company1.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company2.png" alt="" />
+                <img src="/images/company2.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company3.png" alt="" />
+                <img src="/images/company3.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company4.png" alt="" />
+                <img src="/images/company4.png" alt="" />
               </div>
               <div class="logo">
-                <img src="/src/images/company5.png" alt="" />
+                <img src="/images/company5.png" alt="" />
               </div>
             </div>
           </div>
@@ -340,7 +346,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </section>
     <!-- -----------------Featured Clients end ----------------- -->
-
+    <!-- ---------------------Frequently Asked Questions start----------------- -->
     <section class="bg-black text-white">
       <h1 class="text-center leading-[50px] lg:text-5xl text-3xl Title">
         Frequently Asked Questions
@@ -355,8 +361,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 What technologies and tools does Datadoat use for software
                 development?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -378,8 +385,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 How does Datadoat ensure the security and confidentiality of our
                 business data?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -401,8 +409,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 What is the process for project development, and how do we stay
                 updated on progress?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -424,8 +433,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 Can Datadoat handle the entire development process, including
                 design and testing?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -446,8 +456,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               >
                 What is the estimated timeline for completing our project?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -468,8 +479,9 @@ import MainLayout from "../layouts/MainLayout.astro";
               >
                 How does Datadoat determine the cost of our project?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -491,8 +503,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 How do you handle potential changes or additions during the
                 development process?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -513,8 +526,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 Do you provide ongoing support and maintenance after the project
                 is launched?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -536,8 +550,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 Whats Datadoat's approach to ensuring the software/app/website
                 is user-friendly and intuitive?
               </h5>
-              <img
-                src="/src/images/Frequently-Asked-dropdown.png"
+              <Image
+                src={dropdownIcon}
+                loading="lazy"
                 class="w-5 h-6"
                 alt="Expandable"
               />
@@ -556,8 +571,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                   How will you ensure that the software/app/website is scalable
                   for future growth?
                 </h5>
-                <img
-                  src="/src/images/Frequently-Asked-dropdown.png"
+                <Image
+                  src={dropdownIcon}
+                  loading="lazy"
                   class="w-5 h-6"
                   alt="Expandable"
                 />
@@ -578,8 +594,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                 >
                   What is Datadoats payment terms and options?
                 </h5>
-                <img
-                  src="/src/images/Frequently-Asked-dropdown.png"
+                <Image
+                  src={dropdownIcon}
+                  loading="lazy"
                   class="w-5 h-6"
                   alt="Expandable"
                 />
@@ -601,8 +618,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                   What support does Datadoat offers post-launch in case of
                   issues or enhancements?
                 </h5>
-                <img
-                  src="/src/images/Frequently-Asked-dropdown.png"
+                <Image
+                  src={dropdownIcon}
+                  loading="lazy"
                   class="w-5 h-6"
                   alt="Expandable"
                 />
@@ -618,5 +636,6 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
       </section>
     </section>
+    <!-- ---------------------Frequently Asked Questions end----------------- -->
   </section>
 </MainLayout>
