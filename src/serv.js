@@ -171,11 +171,9 @@ function nextSlide() {
   currentIndex = (currentIndex + 1) % totalCards;
   showSlide(currentIndex);
 }
-
 // -------------------------tab section js start---------------------------
 
 function openTab(event, tabId) {
-  console.log(openTab, "hello");
   // Hide all tabs
   var tabs = document.getElementsByClassName("tab");
   for (var i = 0; i < tabs.length; i++) {
