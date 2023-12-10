@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
+import FeaturedProjects from "../components/Home/FeaturedProjects/FeaturedProjects.astro";
 ---
 
 <MainLayout title="Datadot Labs | Why Datadoat Labs">
@@ -18,7 +19,7 @@ import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
         Want a comfortable ride home from work? Pathao cars have you covered!
       </p>
       <div class="md:flex gap-6 w-[70%] btn-section">
-        <a href="contact.html" target="_blank">
+        <a href="contact" target="_blank">
           <button
             class="chatbtn btn bg-accent hover:bg-blue-700 bg-blue-600 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between w-full"
           >
@@ -168,99 +169,7 @@ import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
   <!-- ----------------------What We Stand For section start--------- -->
 
   <!-- -----------------Featured Projects start ----------------- -->
-  <section class="slider-section mb-12">
-    <div class="wrapper">
-      <i class="fas fa-chevron-left"></i>
-
-      <div class="carousel">
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-              alt="img"
-              draggable="false"
-            />
-          </div>
-          <div class="cart-context">
-            <a href="">
-              <h2 class="text-center">Read The Case Study</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <i class="fas fa-chevron-right"></i>
-    </div>
-  </section>
+  <FeaturedProjects />
   <!-- -----------------Featured Projects end ----------------- -->
 
   <!-- -----------------Featured Clients start ----------------- -->
@@ -278,7 +187,7 @@ import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
             Logistics, Hotels, and more.
           </p>
 
-          <a href="app-dev.html">
+          <a href="app-dev">
             <button
               class="chatbtn btn flex items-center gap-3 border-none text-accent"
             >
