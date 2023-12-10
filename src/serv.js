@@ -1,18 +1,18 @@
-let filter_btn = document.querySelectorAll(".filter-btn");
-let tab_items = document.querySelectorAll(".tab-item");
+// let filter_btn = document.querySelectorAll(".filter-btn");
+// let tab_items = document.querySelectorAll(".tab-item");
 
-filter_btn.forEach((el, i) => {
-  el.addEventListener("click", function (ev) {
-    document.querySelector(".filter-btn.selected").classList.remove("selected");
-    let select_tab = filter_btn[i].getAttribute("data-tab");
-    console.log(select_tab);
-    filter_btn[i].classList.add("selected");
-    document
-      .querySelector(`.tab-itm.selected_tab`)
-      .classList.remove("selected_tab");
-    document.querySelector(`#${select_tab}`).classList.add("selected_tab");
-  });
-});
+// filter_btn.forEach((el, i) => {
+//   el.addEventListener("click", function (ev) {
+//     document.querySelector(".filter-btn.selected").classList.remove("selected");
+//     let select_tab = filter_btn[i].getAttribute("data-tab");
+//     console.log(select_tab);
+//     filter_btn[i].classList.add("selected");
+//     document
+//       .querySelector(`.tab-itm.selected_tab`)
+//       .classList.remove("selected_tab");
+//     document.querySelector(`#${select_tab}`).classList.add("selected_tab");
+//   });
+// });
 
 let faq_itms = document.querySelectorAll(".faq-itm");
 
