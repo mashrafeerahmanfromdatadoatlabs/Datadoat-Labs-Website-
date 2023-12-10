@@ -29,5 +29,6 @@ contactForm.addEventListener("submit", (e) => {
     email.value = "";
     phone.value = "";
     message.value = "";
+    submitBtn.innerText = "Send Message";
   });
 });
