@@ -149,4 +149,50 @@ import MainLayout from "../layouts/MainLayout.astro";
   </main>
 </MainLayout>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="/src/contact-us.js"></script>
+<script setup>
+  const contactForm = document.getElementById("contact-form");
+  const submitBtn = document.getElementById("submit_btn");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const phone = document.getElementById("phone");
+  const message = document.getElementById("massage");
+
+  const public_key = "CZ73ratrIglvcYGxU";
+  const services_Id = "service_nyjys43";
+  const template_Id = "template_16ufplj";
+
+  emailjs.init(public_key);
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    submitBtn.innerText = "Sending...";
+
+    const inputFields = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value,
+    };
+
+    try {
+      await emailjs.send(services_Id, template_Id, inputFields);
+      submitBtn.innerText = "Send Success";
+      clearFormFields();
+    } catch (error) {
+      console.error("Error sending email:", error);
+      submitBtn.innerText = "Send Failed";
+    } finally {
+      setTimeout(() => {
+        submitBtn.innerText = "Send Message";
+      }, 2000); // Reset button text after 2 seconds
+    }
+  });
+
+  function clearFormFields() {
+    name.value = "";
+    email.value = "";
+    phone.value = "";
+    message.value = "";
+  }
+</script>
