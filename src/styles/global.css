@@ -24,6 +24,7 @@
 
 .Title-font {
   font-family: Uni-Neue;
+  margin-bottom: 15px;
 }
 
 .coming-span {
@@ -66,10 +67,8 @@ nav ul li span:hover::after {
   right: 0;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  /* transition: all .4s cubic-bezier(.4,0,1,1); */
   transition: all 0.4s;
   transition-timing-function: cubic-bezier(0.22, 1, 0.19, 1);
-  /* transition: all .3s ease-in; */
   transform: rotateX(90deg);
   transform-origin: top center;
 }
