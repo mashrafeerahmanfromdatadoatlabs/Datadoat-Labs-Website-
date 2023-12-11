@@ -7,11 +7,12 @@ import Phone from "/public/images/Banner_img/phone-banner.png";
 import dropdownIcon from "/public/images/Frequently-Asked-dropdown.png";
 import parson1 from "/public/images/parson-1.png";
 import parson2 from "/public/images/parson-2.png";
-
 import TabSection from "../components/Home/TabSection/TabSection.astro";
 import FeaturedProjects from "../components/Home/FeaturedProjects/FeaturedProjects.astro";
 import Recommendations from "../components/Home/Recommendations/Recommendations.astro";
 ---
+
+<script src="/src/serv.js" setup></script>
 
 <MainLayout title="Datadoat Labs | Softwares made in Bangladesh for the World">
   <!------------- banner section start --------------->
@@ -39,7 +40,7 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
             <p class="whitespace-nowrap">Message on WhatsApp</p>
           </button>
         </a>
-        <a href="contact" target="_blank">
+        <a href="contact-sales" target="_blank">
           <button
             class="chatbtn btn bg-accent hover:bg-blue-700 bg-blue-600 duration-500 text-white p-3 px-6 rounded-md flex items-center justify-center md:justify-between w-full"
           >
@@ -159,7 +160,7 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
         </p>
         <a href="">
           <button
-            class="chatbtn btn flex items-center gap-3 border-none text-accent"
+            class="chatbtn btn flex text-blue-600 items-center gap-3 border-none text-accent"
           >
             <p class="text-x">Read More</p>
             <i class="fa-solid fa-arrow-right btn-icon"></i>
@@ -175,7 +176,7 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
         </p>
         <a href="">
           <button
-            class="chatbtn btn flex items-center gap-3 border-none text-accent"
+            class="chatbtn btn text-blue-600 flex items-center gap-3 border-none text-accent"
           >
             <p class="text-x">Read More</p>
             <i class="fa-solid fa-arrow-right btn-icon"></i>
@@ -192,16 +193,18 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
   <section class="bg-black text-white pb-20 pt-10 lg:px-12 px-6">
     <div class="grid md:grid-cols-2 justify-between items-center gap-12 mt-12">
       <div class="text-container flex flex-col gap-4">
-        <h1 class="md:text-4xl text-3xl font-semibold Title">Our Clients</h1>
+        <h1 class="md:text-4xl text-3xl font-semibold Title-font">
+          Our Clients
+        </h1>
         <p>
           We've worked with the companies best in their field. Education,
           E-commerce, F-commerce, Marketing Agency, Food Delivery Restaurants,
           Logistics, Hotels, and more.
         </p>
 
-        <a href="app-dev">
+        <a href="/projects/view-projects">
           <button
-            class="chatbtn btn flex items-center gap-3 border-none text-accent"
+            class="chatbtn btn text-blue-600 flex items-center gap-3 border-none text-accent"
           >
             <p class="text-x">View Our Projects</p>
             <i class="fa-solid fa-arrow-right btn-icon"></i>
@@ -344,7 +347,7 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
 
   <!-- ---------------------Frequently Asked Questions start----------------- -->
   <section class="bg-black text-white">
-    <h1 class="text-center leading-[50px] lg:text-5xl text-3xl Title">
+    <h1 class="text-center leading-[50px] lg:text-5xl text-3xl Title-font">
       Frequently Asked Questions
     </h1>
     <section class="md:p-8 justify-between items-start p-4 md:flex gap-6">
@@ -637,7 +640,7 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
   <section class="bg-black">
     <div class="text-center pb-6">
       <h1
-        class="text-center text-white text-3xl font-bold Title leading-[50px] max-[600px]:text-2xl lg:text-6xl lg:leading-[65px]"
+        class="text-center text-white text-4xl font-bold Title-font leading-[50px] lg:text-6xl lg:leading-[65px]"
       >
         Your Business<br /> Our Technology.
       </h1>
@@ -654,5 +657,3 @@ import Recommendations from "../components/Home/Recommendations/Recommendations.
   </section>
   <!-- ----------------------Contact today end--------------------- -->
 </MainLayout>
-
-<script src="/src/serv.js" setup></script>;
