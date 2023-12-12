@@ -35,7 +35,7 @@
   font-family: Uni-Neue;
 }
 
-nav ul li span {
+/* nav ul li span {
   position: relative;
   padding-bottom: 4px;
 }
@@ -59,7 +59,7 @@ nav ul li span::after {
 nav ul li span:hover::after {
   transform: scaleX(1);
   background-color: black;
-}
+} */
 
 .nav-menu {
   position: absolute;
@@ -306,9 +306,9 @@ button:hover .btn-icon {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active {
+/* .wrapper i:active {
   transform: translateY(-50%) scale(0.85);
-}
+} */
 .wrapper i:first-child {
   left: -22px;
 }
