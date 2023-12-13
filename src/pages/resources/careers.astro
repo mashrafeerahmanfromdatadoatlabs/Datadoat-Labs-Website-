@@ -27,44 +27,54 @@ import MainLayout from "../../layouts/MainLayout.astro";
             </a>
           </div>
         </div>
-        <div class="Img-container flex flex-col gap-2 md:ml-auto my-6 md:my-0">
-          <div class="md:ml-auto md:mx-0 mx-auto">
+        <div
+          class="container flex flex-col gap-2 justify-end mx-auto overflow-x-hidden md:w-[60%]"
+        >
+          <!-- First Column -->
+          <div class="flex md:justify-end gap-2 justify-center">
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="First Image"
+              class="md:h-32 h-16"
             />
           </div>
-          <div class="flex gap-2 md:ml-auto md:mx-0 mx-auto">
+
+          <!-- Second Column -->
+          <div class="flex md:justify-end gap-2 justify-center">
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="Second Image 1"
+              class="md:h-32 h-16 md:mb-0"
             />
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="Second Image 2"
+              class="md:h-32 h-16"
             />
           </div>
-          <div class="flex gap-2 ml-0 mx-auto">
+
+          <!-- Third Column -->
+          <div
+            class="flex md:justify-end gap-2 mb-8 justify-center md:flex-row lg:justify-end sm:justify-center"
+          >
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="Third Image 1"
+              class="w-auto md:h-32 h-16 md:mb-0"
             />
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="Third Image 2"
+              class="w-auto md:h-32 h-16 md:mb-0"
             />
             <img
               src="/images/nv_js928nav.png"
-              class="md:h-32 h-[66px]"
-              alt=""
+              alt="Third Image 3"
+              class="w-auto md:h-32 h-16"
             />
           </div>
         </div>
+
         <div class="mx-auto justify-center text-center ml-auto flex md:hidden">
           <a href="/contact-sales" target="_blank">
             <button

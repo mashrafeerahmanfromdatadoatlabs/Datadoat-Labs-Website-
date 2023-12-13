@@ -100,7 +100,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 </MainLayout>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script setup>
+<script is:inline>
   const contactForm = document.getElementById("contact-form");
   const submitBtn = document.getElementById("submit_btn");
   const name = document.getElementById("name");
