@@ -19,12 +19,13 @@ faq_itms.forEach((el, i) => {
 let mobMenuToggle = document.querySelector("#mobile-menu");
 
 mobMenuToggle.addEventListener("click", (ev) => {
-  mobMenuToggle.nextElementSibling.classList.toggle("show");
-  mobMenuToggle.querySelector("img").getAttribute("src") == "/images/open.svg"
-    ? mobMenuToggle
-        .querySelector("img")
-        .setAttribute("src", "/images/close.svg")
-    : mobMenuToggle
-        .querySelector("img")
-        .setAttribute("src", "/images/open.svg");
+  const menu = mobMenuToggle.nextElementSibling;
+  menu.classList.toggle("show");
+
+  const img = mobMenuToggle.querySelector("img");
+  if (img.getAttribute("src") == "/images/close.svg") {
+    img.setAttribute("src", "/images/open.svg");
+  } else {
+    img.setAttribute("src", "/images/close.svg");
+  }
 });
