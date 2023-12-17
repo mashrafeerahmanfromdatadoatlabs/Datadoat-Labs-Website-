@@ -12,215 +12,234 @@ import scalabilityIcon from "../../public/images/scalability.png";
 import repairIcon from "../../public/images/repair.png";
 ---
 
-<header
-  class="flex justify-between items-center content-center m-4 ml-10 mr-10"
->
-  <a href="/">
-    <Image src={logo} class="w-48" alt="Datadoat Labs" />
-  </a>
-  <nav>
-    <ul class="hidden min-[1050px]:flex items-center nav-links">
-      <li class="m-3 group nav-link">
-        <span
-          class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
-        >
-          <p>Services</p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
-        </span>
-        <section
-          class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu"
-        >
-          <div class="p-4 flex-1 flex-grow-[2]">
-            <div class="grid grid-cols-4 gap-0">
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 hover:border-blue-600 rounded-xl"
-              >
-                <Image
-                  src={webBrowserIcon}
-                  alt="web-browser.png"
-                  class="w-8 h-8"
-                />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/web-dev" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                    >
-                      Website<i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Crafting exceptional websites that captivate and inspire
-                      your online success
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image src={webDevIcon} alt="web-browser.png" class="w-8 h-8" />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/web-application" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                    >
-                      Web Application<i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Making captivating web applications that propel your
-                      business forward
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image
-                  src={MobileAppIcon}
-                  alt="web-browser.png"
-                  class="w-8 h-8"
-                />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/mobile-application" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                    >
-                      Mobile Application<i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Building Android & ios mobile apps that drive growth and
-                      exceed user expectations
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 px-4 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image
-                  src={coddingIcon}
-                  alt="web-browser.png"
-                  class="w-8 h-8"
-                />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/custom-software-dev" target="">
-                    <h2
-                      class="whitespace-nowrap text-[20px] font-semibold leading-9 tracking-[-0.5px] text-black"
-                    >
-                      Custom Software
-                      <i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Driving innovation through custom software development
-                      tailored to your business needs
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image
-                  src={TerminalIcon}
-                  alt="web-browser.png"
-                  class="w-8 h-8"
-                />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/api" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                    >
-                      API<i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Harness the power of APIs to unlock new possibilities for
-                      your software
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image
-                  src={scalabilityIcon}
-                  alt="web-browser.png"
-                  class="w-8 h-8"
-                />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/software-testing" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black"
-                    >
-                      Software Testing
-                      <i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      ensure the flawless performance & security of your
-                      software with our comprehensive testing services
-                    </p>
-                  </a>
-                </section>
-              </div>
-              <div
-                class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
-              >
-                <Image src={repairIcon} alt="web-browser.png" class="w-8 h-8" />
-                <section class="ml-[15px] cursor-pointer">
-                  <a href="/services/software-maintenance" target="">
-                    <h2
-                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                    >
-                      Software Maintenance<i
-                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
-                      ></i>
-                    </h2>
-                    <p
-                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
-                    >
-                      Ensuring smooth operations with expert software
-                      maintenance and support services
-                    </p>
-                  </a>
-                </section>
+<section>
+  <div
+    class="h-[56px] w-full sticky top-0 z-[55] mx-auto flex items-center justify-center px-[24px] 1330px:px-[9px]"
+    style="background:linear-gradient(90.27deg, #7622E2 7.83%, #6E50FF 100.33%)"
+  >
+    <p
+      class="text-sm font-medium text-center md:font-semibold font-medium text-white sm:text-base"
+    >
+      With 670+ votes, Wind.app became the #1 trending product on Product Hunt
+    </p>
+  </div>
+  <header
+    class="flex justify-between items-center content-center m-4 ml-10 mr-10"
+  >
+    <a href="/">
+      <Image src={logo} class="w-48" alt="Datadoat Labs" />
+    </a>
+    <nav>
+      <ul class="hidden min-[1050px]:flex items-center nav-links">
+        <li class="m-3 group nav-link">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
+          >
+            <p>Services</p>
+            <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+          </span>
+          <section
+            class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu"
+          >
+            <div class="p-4 flex-1 flex-grow-[2]">
+              <div class="grid grid-cols-4 gap-0">
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 hover:border-blue-600 rounded-xl"
+                >
+                  <Image
+                    src={webBrowserIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/web-dev" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Website<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Crafting exceptional websites that captivate and inspire
+                        your online success
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={webDevIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/web-application" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Web Application<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Making captivating web applications that propel your
+                        business forward
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={MobileAppIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/mobile-application" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Mobile Application<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Building Android & ios mobile apps that drive growth and
+                        exceed user expectations
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 px-4 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={coddingIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/custom-software-dev" target="">
+                      <h2
+                        class="whitespace-nowrap text-[20px] font-semibold leading-9 tracking-[-0.5px] text-black"
+                      >
+                        Custom Software
+                        <i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Driving innovation through custom software development
+                        tailored to your business needs
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={TerminalIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/api" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        API<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Harness the power of APIs to unlock new possibilities
+                        for your software
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={scalabilityIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/software-testing" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black"
+                      >
+                        Software Testing
+                        <i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        ensure the flawless performance & security of your
+                        software with our comprehensive testing services
+                      </p>
+                    </a>
+                  </section>
+                </div>
+                <div
+                  class="flex items-start justify-center m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl hover:border-blue-600"
+                >
+                  <Image
+                    src={repairIcon}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <a href="/services/software-maintenance" target="">
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Software Maintenance<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Ensuring smooth operations with expert software
+                        maintenance and support services
+                      </p>
+                    </a>
+                  </section>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </li>
+          </section>
+        </li>
 
-      <li class="m-3 group">
-        <span
-          class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
-        >
-          <p>Projects</p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
-        </span>
-        <section
+        <li class="m-3 group">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
+          >
+            <a href="/projects/view-projects">Projects</a>
+            <!-- <Image src={NavDropdownImg} alt="" class="w-8 h-8" /> -->
+          </span>
+          <!-- <section
           class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
         >
           <div class="pr-10 p-4 pt-0">
@@ -246,276 +265,284 @@ import repairIcon from "../../public/images/repair.png";
               </li>
             </ul>
           </div>
-        </section>
-      </li>
+        </section> -->
+        </li>
 
-      <li class="m-3">
-        <span>
-          <a
-            href="/why-datadoat-labs"
-            class="text-lg font-semibold cursor-pointer transition-colors duration-200"
+        <li class="m-3">
+          <span>
+            <a
+              href="/why-datadoat-labs"
+              class="text-lg font-semibold cursor-pointer transition-colors duration-200"
+            >
+              Why Datadoat Labs?
+            </a>
+          </span>
+        </li>
+
+        <li class="m-3">
+          <span>
+            <a
+              class="text-lg font-semibold cursor-pointer transition-colors duration-200"
+              href="/contact-sales"
+              target=""
+            >
+              Contact Sales
+            </a>
+          </span>
+        </li>
+
+        <li class="m-3 group">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
           >
-            Why Datadoat Labs?
-          </a>
-        </span>
-      </li>
-
-      <li class="m-3">
-        <span>
-          <a
-            class="text-lg font-semibold cursor-pointer transition-colors duration-200"
-            href="/contact-sales"
-            target=""
+            <p>Resources</p>
+            <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+          </span>
+          <section
+            class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
           >
-            Contact Sales
-          </a>
-        </span>
-      </li>
+            <div class="pr-6 p-4 pt-0">
+              <ul>
+                <li>
+                  <a href="/resources/blog">
+                    <p>Company Blog</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/careers">
+                    <p>Careers</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/about">
+                    <p>About</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/press-releases">
+                    <p>Press Releases</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </li>
+      </ul>
 
-      <li class="m-3 group">
-        <span
-          class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
-        >
-          <p>Resources</p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
-        </span>
-        <section
-          class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
-        >
-          <div class="pr-6 p-4 pt-0">
-            <ul>
-              <li>
-                <a href="/resources/blog">
-                  <p>Company Blog</p>
-                </a>
-              </li>
-              <li>
-                <a href="/resources/careers">
-                  <p>Careers</p>
-                </a>
-              </li>
-              <li>
-                <a href="/resources/about">
-                  <p>About</p>
-                </a>
-              </li>
-              <li>
-                <a href="/resources/press-releases">
-                  <p>Press Releases</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </li>
-    </ul>
-
-    <div class="hidden max-[1049px]:flex" id="mobile-menu">
-      <Image
-        alt="close"
-        loading="lazy"
-        decoding="async"
-        data-nimg="1"
-        class="mr-[5px] cursor-pointer"
-        style="color: transparent"
-        src={NavMenuIcon}
-        width="24"
-        height="24"
-      />
-    </div>
-
-    <section
-      class="hidden bg-white py-[28px] w-[100%] p-7 nav-menu z-[100] mt-[2.6%]"
-      style="transform: rotateX(0deg)"
-    >
-      <div class="border-b-2">
-        <div class="flex justify-between p-4 faq-itm">
-          <p class="text-xl font-semibold leading-9 text-accent ml-2">
-            Services
-          </p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
-        </div>
-
-        <div class="flex-1 flex-grow-[2]">
-          <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2">
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image
-                src={webBrowserIcon}
-                alt="web-browser.png"
-                class="w-8 h-8"
-              />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/web-dev" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Website<i
-                      class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Crafting exceptional websites that captivate and inspire
-                    your online success
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image src={webDevIcon} alt="web-browser.png" class="w-8 h-8" />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/web-application" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Web Application<i
-                      class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Making captivating web applications that propel your
-                    business forward
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image
-                src={MobileAppIcon}
-                alt="web-browser.png"
-                class="w-8 h-8"
-              />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/mobile-application" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Mobile Application<i
-                      class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Building Android & ios mobile apps that drive growth and
-                    exceed user expectations
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image src={coddingIcon} alt="web-browser.png" class="w-8 h-8" />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/custom-software-dev" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Custom Software Solution<i
-                      class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Driving innovation through custom software development
-                    tailored to your business needs
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image src={TerminalIcon} alt="web-browser.png" class="w-8 h-8" />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/api" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    API<i
-                      class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Harness the power of APIs to unlock new possibilities for
-                    your software
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image
-                src={scalabilityIcon}
-                alt="web-browser.png"
-                class="w-8 h-8"
-              />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/software-testing" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Software Testing Service<i
-                      class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    ensure the flawless performance & security of your software
-                    with our comprehensive testing services
-                  </p>
-                </a>
-              </section>
-            </div>
-            <div
-              class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
-            >
-              <Image src={repairIcon} alt="web-browser.png" class="w-8 h-8" />
-              <section class="ml-[15px] cursor-pointer">
-                <a href="/services/software-maintenance" target="">
-                  <h2
-                    class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
-                  >
-                    Software Maintenance<i
-                      class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
-                    ></i>
-                  </h2>
-                  <p
-                    class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
-                  >
-                    Ensuring smooth operations with expert software maintenance
-                    and support services
-                  </p>
-                </a>
-              </section>
-            </div>
-          </div>
-        </div>
+      <div class="hidden max-[1049px]:flex" id="mobile-menu">
+        <Image
+          alt="close"
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+          class="mr-[5px] cursor-pointer"
+          style="color: transparent"
+          src={NavMenuIcon}
+          width="24"
+          height="24"
+        />
       </div>
 
-      <div class="border-b-2">
-        <div class="flex justify-between p-4 faq-itm">
-          <p class="text-xl font-semibold leading-9 text-accent ml-2">
-            Projects
-          </p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+      <section
+        class="hidden bg-white py-[28px] w-[100%] p-7 nav-menu z-[100] mt-[2.6%]"
+        style="transform: rotateX(0deg)"
+      >
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <p class="text-xl font-semibold leading-9 text-accent ml-2">
+              Services
+            </p>
+            <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+          </div>
+
+          <div class="flex-1 flex-grow-[2]">
+            <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2">
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={webBrowserIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/web-dev" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Website<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Crafting exceptional websites that captivate and inspire
+                      your online success
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image src={webDevIcon} alt="web-browser.png" class="w-8 h-8" />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/web-application" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Web Application<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Making captivating web applications that propel your
+                      business forward
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={MobileAppIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/mobile-application" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Mobile Application<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Building Android & ios mobile apps that drive growth and
+                      exceed user expectations
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={coddingIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/custom-software-dev" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Custom Software Solution<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Driving innovation through custom software development
+                      tailored to your business needs
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={TerminalIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/api" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      API<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Harness the power of APIs to unlock new possibilities for
+                      your software
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={scalabilityIcon}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/software-testing" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Testing Service<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      ensure the flawless performance & security of your
+                      software with our comprehensive testing services
+                    </p>
+                  </a>
+                </section>
+              </div>
+              <div
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image src={repairIcon} alt="web-browser.png" class="w-8 h-8" />
+                <section class="ml-[15px] cursor-pointer">
+                  <a href="/services/software-maintenance" target="">
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Maintenance<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Ensuring smooth operations with expert software
+                      maintenance and support services
+                    </p>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
+
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <p class="text-xl font-semibold leading-9 text-accent ml-2">
+              <a href="/projects/view-projects">Projects</a>
+            </p>
+            <!-- <Image src={NavDropdownImg} alt="" class="w-8 h-8" /> -->
+          </div>
+          <!-- <div>
           <div class="p-4 flex-1 flex-grow-[2]">
             <div class="-mt-8 ml-4">
               <ul class="flex flex-col gap-1">
@@ -527,61 +554,60 @@ import repairIcon from "../../public/images/repair.png";
                 </li>
                 <li>
                   <a href="/projects/our-products">
-                    Our Products <span
-                      class="font-semibold text-red-600 text-sm">Soon</span
-                    >
+                    Our Products <span class="coming-span"> Coming Soon</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
+        </div> -->
         </div>
-      </div>
-      <div class="border-b-2">
-        <div class="flex justify-between p-4 faq-itm">
-          <a href="/why-datadoat-labs">
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <a href="/why-datadoat-labs">
+              <p class="text-xl font-semibold leading-9 text-accent ml-2">
+                Why Datadoat Labs?
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
             <p class="text-xl font-semibold leading-9 text-accent ml-2">
-              Why Datadoat Labs?
+              Resources
             </p>
-          </a>
-        </div>
-      </div>
+            <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+          </div>
 
-      <div class="border-b-2">
-        <div class="flex justify-between p-4 faq-itm">
-          <p class="text-xl font-semibold leading-9 text-accent ml-2">
-            Resources
-          </p>
-          <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
-        </div>
-
-        <div>
-          <div class="p-4 flex-1 flex-grow-[2]">
-            <div class="-mt-8 ml-4">
-              <ul class="flex flex-col gap-1">
-                <li>
-                  <a href="/resources/blog"> Company Blog</a>
-                </li>
-                <li>
-                  <a href="/resources/careers"> Careers</a>
-                </li>
-                <li>
-                  <a href="/resources/about"> About</a>
-                </li>
-                <li>
-                  <a href="/resources/press-releases"> Press Releases</a>
-                </li>
-              </ul>
+          <div>
+            <div class="p-4 flex-1 flex-grow-[2]">
+              <div class="-mt-8 ml-4">
+                <ul class="flex flex-col gap-1">
+                  <li>
+                    <a href="/resources/blog"> Company Blog</a>
+                  </li>
+                  <li>
+                    <a href="/resources/careers"> Careers</a>
+                  </li>
+                  <li>
+                    <a href="/resources/about"> About</a>
+                  </li>
+                  <li>
+                    <a href="/resources/press-releases"> Press Releases</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="flex justify-between p-4 border-b-2">
-        <p class="text-xl font-semibold leading-9 text-accent ml-2">
-          <a href="/contact-sales" target=""> Contact Sales</a>
-        </p>
-      </div>
-    </section>
-  </nav>
-</header>
+        <div class="flex justify-between p-4 border-b-2">
+          <p class="text-xl font-semibold leading-9 text-accent ml-2">
+            <a href="/contact-sales" target=""> Contact Sales</a>
+          </p>
+        </div>
+      </section>
+    </nav>
+  </header>
+</section>
