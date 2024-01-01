@@ -30,9 +30,11 @@
 .coming-span {
   color: blue;
   font-size: 10px;
-  font-weight: 600;
   text-transform: uppercase;
   font-family: Uni-Neue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 /* nav ul li span {
