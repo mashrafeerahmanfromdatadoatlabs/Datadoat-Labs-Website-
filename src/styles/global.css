@@ -546,33 +546,14 @@ footer ul li {
   margin: 4px 0;
 }
 footer ul li a {
-  position: relative;
   text-decoration: none;
   color: white;
   padding-bottom: 4px;
+  transition-duration: 0.5s;
 }
 
 footer ul li a:hover {
-  transition: transform 0.5s;
-  color: rgb(235, 235, 235);
-}
-
-footer ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5px;
-  background-color: transparent;
-  transform: scaleX(0);
-  transform-origin: bottom left;
-  transition: transform 0.5s, background-color 0.5s;
-}
-
-footer ul li a:hover::after {
-  transform: scaleX(1);
-  background-color: white;
+  color: #e5e7eb;
 }
 
 footer .social-links {
