@@ -81,15 +81,13 @@ nav ul li span:hover::after {
   transition-timing-function: cubic-bezier(0.22, 1, 0.19, 1);
   transform: rotateX(90deg);
   transform-origin: top center;
-  border: none;
 }
 
 /* -----------------nav menu animation start--------------- */
 
 .nav-menu-2 div ul li {
   font-size: 16px;
-  margin: 6px auto;
-  transition: all 0.5s;
+  margin: 15px auto;
 }
 
 /* Copied from Main */
@@ -553,7 +551,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #e5e7eb;
+  color: #607fbc;
 }
 
 footer .social-links {
